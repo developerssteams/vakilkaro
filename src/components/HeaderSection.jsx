@@ -92,7 +92,7 @@ function HeaderSection() {
               <div className="col-12 col-sm-12 col-md-6">
                 <p><i className="fas fa-thumbs-up"></i> Over 15K Businesses</p>
               </div>
-            </div>    
+            </div>
             {/* <ul className="list-unstyled mt-3 ">
               <li><i className="fas fa-gavel"></i> Expert Legal Guidance</li>
               <li><i className="fas fa-bolt"></i> Fast & Affordable Service</li>
@@ -110,14 +110,14 @@ function HeaderSection() {
             </a>
             &nbsp; &nbsp;
             <a
-  href="https://www.youtube.com/yourchannel" // replace with your channel URL
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn btn-danger text-white fw-bold mt-4 px-4 py-2"
-  title="Subscribe to our YouTube channel for latest updates"
->
-  <i className="fab fa-youtube"></i> Check us on YouTube
-</a>
+              href="https://www.youtube.com/yourchannel" // replace with your channel URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-danger text-white fw-bold mt-4 px-4 py-2"
+              title="Subscribe to our YouTube channel for latest updates"
+            >
+              <i className="fab fa-youtube"></i> Check us on YouTube
+            </a>
           </div>
 
           {/* ✅ RIGHT COLUMN — Sun Image Slider */}

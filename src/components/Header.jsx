@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import logo from "../assets/vakilkaro.png"; // apna logo laga dena
 
- function Header() {
+function Header() {
     return (
         <header className="rk-header">
             <div className="rk-box">
