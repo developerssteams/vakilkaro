@@ -8,6 +8,7 @@ import Testimonials from "../components/Testimonials";
 import PopularSearches from "../components/PopularSearches";
 import TawkTo from "../components/TawkTo";
 import StorySection from "../components/StorySection";
+import ServiceSlider from "../components/ServiceSlider ";
 function Home() {
     return (
         <>
@@ -15,6 +16,7 @@ function Home() {
             <HeaderSection />
             <BlogSection />
             <StorySection />
+            <ServiceSlider />
             <WhyVakilkaro />
             <Timeline />
             <ClientsSection />
