@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import storyImg from "../assets/Images/Blog-1.jpg"; // apni image ka path yahan lagao
+import storyVideo from "../assets/video/june-ai.mp4"; // apni image ka path yahan lagao
 
 
 const StorySection = () => {
@@ -28,9 +28,21 @@ const StorySection = () => {
                 </div>
 
                 {/* Right Image */}
+                {/* <div className="story-right">
+                    <video src={storyImg} alt="story" className="story-img" />
+                </div> */}
                 <div className="story-right">
-                    <img src={storyImg} alt="story" className="story-img" />
+                    <video
+                        className="story-img"
+                        src={storyVideo}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls={false}
+                    />
                 </div>
+
             </div>
         </section>
     );

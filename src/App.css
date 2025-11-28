@@ -1,25 +1,46 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+:root {
+
+  --Font-Roboto: "Roboto", sans-serif;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Font-Roboto) !important;
+
+
+}
+
 /* Main Header Background */
 .rk-header {
   width: 100%;
-  background: linear-gradient(135deg, #061525, #0c2844);
-  padding: 10px;
+  background: black;
+
   /* extra spacing like your reference */
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  font-family: var(--Font-Roboto);
 }
 
 /* Inner Rounded Box */
 .rk-box {
   width: 95%;
   max-width: 1500px;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 16px 20px;
-  border-radius: 50px;
-  backdrop-filter: blur(4px);
+  padding: 16px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 /* Left Logo */
@@ -27,10 +48,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
+
 }
 
 .rk-logo {
-  width: 38px;
+  width: 120px
 }
 
 .rk-title {
@@ -49,7 +71,7 @@
   color: #eaeaea;
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .rk-nav a:hover {
@@ -85,42 +107,54 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* TALK TO EXPERTS BUTTON */
-.rk-expert-btn {
-  padding: 10px 26px;
-  background: #ff9f29;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
+
+/* header me menu css   */
+/* Parent menu item */
+
+
+.rk-menu-item {
+  position: relative;
+}
+
+/* Mega Menu Box */
+.rk-mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 800px;
+  background: #fff;
+  padding: 25px 30px;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 10px;
+}
+
+/* Show menu on hover */
+.rk-menu-item:hover .rk-mega-menu {
+  display: grid;
+}
+
+/* Each Column */
+.rk-mega-column a {
+  display: block;
+  padding: 6px 0;
+  color: #333;
   font-size: 15px;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: 0.2s ease;
 }
 
-.rk-expert-btn:hover {
-  background: #ff8e00;
+.rk-mega-column a:hover {
+  color: #007bff;
+  padding-left: 5px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* header me menu css end   */
 
 
 
@@ -1373,7 +1407,6 @@ ul.bannerserlist {
   background: #111;
   color: #fff;
   padding: 40px 20px 10px;
-  font-family: Arial, sans-serif;
   position: relative;
 }
 
@@ -1490,124 +1523,6 @@ ul.bannerserlist {
     text-align: center;
   }
 }
-/* Main Header Background */
-.rk-header {
-  width: 100%;
-  background: linear-gradient(135deg, #061525, #0c2844);
-  padding: 10px;
-  /* extra spacing like your reference */
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-}
-
-/* Inner Rounded Box */
-.rk-box {
-  width: 95%;
-  max-width: 1500px;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 16px 20px;
-  border-radius: 50px;
-  backdrop-filter: blur(4px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Left Logo */
-.rk-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.rk-logo {
-  width: 120px
-}
-
-.rk-title {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-/* NAV MENU */
-.rk-nav {
-  display: flex;
-  gap: 28px;
-}
-
-.rk-nav a {
-  color: #eaeaea;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.rk-nav a:hover {
-  color: #fff;
-}
-
-/* RIGHT SECTION */
-.rk-right {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.rk-search {
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-}
-
-/* LOGIN BUTTON */
-.rk-login-btn {
-  padding: 8px 26px;
-  background: transparent;
-  color: #fff;
-  border: 1.5px solid #fff;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: 0.3s;
-}
-
-.rk-login-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-/* TALK TO EXPERTS BUTTON */
-.rk-expert-btn {
-  padding: 10px 26px;
-  background: #ff9f29;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  font-size: 15px;
-  transition: 0.3s;
-}
-
-.rk-expert-btn:hover {
-  background: #ff8e00;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2868,7 +2783,6 @@ ul.bannerserlist {
   background: #111;
   color: #fff;
   padding: 40px 20px 10px;
-  font-family: Arial, sans-serif;
   position: relative;
 }
 
@@ -3091,7 +3005,7 @@ ul.bannerserlist {
   background: #fff;
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border: 1px solid #eee;
   transition: 0.3s;
 }
@@ -3174,3 +3088,7 @@ ul.bannerserlist {
   height: 10px !important;
   border-radius: 10px !important;
 }
+
+
+
+/* header mega menu  */
