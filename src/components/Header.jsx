@@ -105,35 +105,27 @@ function Header() {
                         {/* ✅ LEFT COLUMN */}
                         <div className="col-md-6" data-aos="fade-right">
                             <h1 className="fw-bold mb-3">
-
                                 <br />
                                 <span className="highlight">Business & Legal Services Under One Roof</span>
                             </h1>
-
                             <p style={{ color: 'white' }}>
                                 Business Registration, Trademark, Taxation, Legal Compliances &
                                 Legal Services in few clicks.
                             </p>
-
-                           
                             <a
                                 className="btn btn-warning  fw-bold  mt-4 px-4 py-2"
                                 data-bs-toggle="modal"
-                                data-bs-target="#enquiryModal"
-                            >
+                                data-bs-target="#enquiryModal">
                                 <i className="fas fa-user-plus"></i> VIEW SERVICES
                             </a>
-                             &nbsp; &nbsp;
-                             <a
+                            &nbsp; &nbsp;
+                            <a
                                 className="btn btn-warning  fw-bold  mt-4 px-4 py-2"
                                 data-bs-toggle="modal"
-                                data-bs-target="#enquiryModal"
-                            >
+                                data-bs-target="#enquiryModal">
                                 <i className="fas fa-user-plus"></i> HIRE  EXPERTS
                             </a>
-                           
                         </div>
-
                         <div className="col-md-6" data-aos="fade-left">
                             <div className="header-slider rounded-4 overflow-hidden shadow-lg mt-4 mt-md-0">
                                 <Swiper
@@ -159,6 +151,77 @@ function Header() {
                         </div>
                     </div>
                 </div>
+          
+                    <br />
+                     
+                <div style={{ textAlign: "center" }}>
+                    <h2
+                        className="fw-bold mb-3"
+                        style={{
+                            marginTop: 0,
+                            marginBottom: "10px",
+                            fontWeight: 700
+                        }}
+                    >
+                        <br />
+                        <span
+                            className="highlight"
+                            style={{
+                                color: "white",     // highlight aqua color
+                                display: "inline-block"
+                            }}
+                        >
+                            Our Verified Services
+                        </span>
+                    </h2>
+                </div>
+
+                <div className="container mt-4">
+                    <div className="row justify-content-center text-center">
+
+                        {/* Company Registration */}
+                        <div className="col-md-3 mb-4" data-aos="zoom-in">
+                            <div className="service-card p-4 rounded-3 shadow-sm">
+                                <div className="icon mb-3"><i className="fas fa-building fa-2x"></i></div>
+                                <h5 className="fw-bold">Company Registration</h5>
+                                <p className="price">₹ 7,999<br /><span>7 days</span></p>
+                                <button className="btn btn-warning w-100 fw-bold">GET STARTED</button>
+                            </div>
+                        </div>
+
+                        {/* GST Registration */}
+                        <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <div className="service-card p-4 rounded-3 shadow-sm">
+                                <div className="icon mb-3"><i className="fas fa-file-invoice fa-2x"></i></div>
+                                <h5 className="fw-bold">GST Registration</h5>
+                                <p className="price">₹ 5,099<br /><span>6 days</span></p>
+                                <button className="btn btn-warning w-100 fw-bold">GET STARTED</button>
+                            </div>
+                        </div>
+
+                        {/* Trademark Registration */}
+                        <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                            <div className="service-card p-4 rounded-3 shadow-sm">
+                                <div className="icon mb-3"><i className="fas fa-registered fa-2x"></i></div>
+                                <h5 className="fw-bold">Trademark Registration</h5>
+                                <p className="price">₹ 9,499<br /><span>4 days</span></p>
+                                <button className="btn btn-warning w-100 fw-bold">GET STARTED</button>
+                            </div>
+                        </div>
+
+                        {/* FSSAI Registration */}
+                        <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                            <div className="service-card p-4 rounded-3 shadow-sm">
+                                <div className="icon mb-3"><i className="fas fa-utensils fa-2x"></i></div>
+                                <h5 className="fw-bold">FSSAI Registration</h5>
+                                <p className="price">₹ 7,499<br /><span>7 days</span></p>
+                                <button className="btn btn-warning w-100 fw-bold">GET STARTED</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
 
                 {/* ✅ Bootstrap Modal (Popup Form) */}
                 <div
@@ -170,116 +233,11 @@ function Header() {
                 >
                     <div className="modal-dialog modal-dialog-centered modal-lg">
                         <div className="modal-content p-3">
-                            <div className="modal-header border-0">
-                                <h5 className="modal-title fw-bold" id="enquiryModalLabel">
-                                    Get Free Consultation
-                                </h5>
-                                <button
-                                    type="button"
-                                    className="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                ></button>
-                            </div>
 
-                            <div className="modal-body">
-                                <form>
-                                    <div className="row g-3">
-                                        <div className="col-md-6">
-                                            <label className="form-label">Full Name*</label>
-                                            <input type="text" className="form-control" required />
-                                        </div>
 
-                                        <div className="col-md-6">
-                                            <label className="form-label">Email*</label>
-                                            <input type="email" className="form-control" required />
-                                        </div>
 
-                                        <div className="col-md-6">
-                                            <label className="form-label">Phone*</label>
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                value={phone}
-                                                onChange={(e) => setPhone(e.target.value.slice(0, 10))}
-                                                required
-                                            />
 
-                                            {/* OTP Section */}
-                                            {phone.length === 10 && !otpSent && (
-                                                <button
-                                                    type="button"
-                                                    className="btn btn-sm btn-outline-primary mt-2"
-                                                    onClick={handleSendOtp}
-                                                >
-                                                    Send OTP
-                                                </button>
-                                            )}
 
-                                            {otpSent && (
-                                                <div className="mt-2">
-                                                    {timer > 0 ? (
-                                                        <p className="small text-muted">
-                                                            Resend OTP in {timer}s
-                                                        </p>
-                                                    ) : (
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-sm btn-outline-secondary"
-                                                            onClick={handleResendOtp}
-                                                        >
-                                                            Resend OTP
-                                                        </button>
-                                                    )}
-
-                                                    <input
-                                                        type="text"
-                                                        maxLength={6}
-                                                        className="form-control mt-2"
-                                                        placeholder="Enter OTP"
-                                                        value={otp}
-                                                        onChange={(e) =>
-                                                            setOtp(e.target.value.replace(/\D/, ""))
-                                                        }
-                                                        required
-                                                    />
-                                                </div>
-                                            )}
-                                        </div>
-
-                                        <div className="col-md-6">
-                                            <label className="form-label">Service Type*</label>
-                                            <select
-                                                className="form-select"
-                                                value={serviceType}
-                                                onChange={(e) => setServiceType(e.target.value)}
-                                                required
-                                            >
-                                                <option value="" disabled hidden>
-                                                    Select Service
-                                                </option>
-                                                <option value="trademark">Trademark Registration</option>
-                                                <option value="company">Company Incorporation</option>
-                                                <option value="gst">GST Filing</option>
-                                                <option value="tax">Taxation</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div className="mt-4 text-end">
-                                        <button type="submit" className="btn btn-success px-4">
-                                            Enquiry Now
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div className="modal-footer border-0">
-                                <small className="text-muted">
-                                    *No spam. 15000+ businesses registered with{" "}
-                                    <span className="fw-semibold text-primary">Vakilkaro</span>
-                                </small>
-                            </div>
                         </div>
                     </div>
                 </div>
