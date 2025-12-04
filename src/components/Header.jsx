@@ -217,8 +217,68 @@ function Header() {
                         </div>
                     </div>
 
-                    <a href="#">Compliance</a>
-                    <a href="#">Funding</a>
+                    <div className="rk-menu-item">
+                        <a href="#">Compliance</a>
+                        <div className="rk-mega-menu">
+                            <div className="rk-mega-column">
+                                <a href="#">Compliance Pvt Ltd.</a>
+                                <a href="#">Compliance LLP</a>
+                                <a href="#">Compliance OPC</a>
+                                <a href="#">Compliance Nidhi</a>
+                                <a href="#">Compliance NBFC	</a>
+                                <a href="#">Compliance Microfinance</a>
+
+                            </div>
+                            <div className="rk-mega-column">
+                                <a href="#">Compliance Partnership</a>
+                                <a href="#">Compliance Proprietorship</a>
+                                <a href="#">Alteration of Capital	</a>
+                                <a href="#">Directors Change</a>
+
+
+
+
+
+
+                            </div>
+                            <div className="rk-mega-column">
+                                <a href="#">Registered Office Change</a>
+                                <a href="#">DIR-3 KYC</a>
+                                <a href="#">EPF Return</a>
+                                <a href="#">Shareholding Transfer</a>
+                                <a href="#">DMAT Account-Company</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   <div className="rk-menu-item">
+                        <a href="#">Funding</a>
+                        <div className="rk-mega-menu">
+                            <div className="rk-mega-column">
+                                <a href="#">Compliance Pvt Ltd.</a>
+                                <a href="#">Compliance LLP</a>
+                                <a href="#">Compliance OPC</a>
+                                <a href="#">Compliance Nidhi</a>
+                                <a href="#">Compliance NBFC	</a>
+                                <a href="#">Compliance Microfinance</a>
+
+                            </div>
+                            <div className="rk-mega-column">
+                                <a href="#">Compliance Partnership</a>
+                                <a href="#">Compliance Proprietorship</a>
+                                <a href="#">Alteration of Capital	</a>
+                                <a href="#">Directors Change</a>
+                            </div>
+                            <div className="rk-mega-column">
+                                <a href="#">Registered Office Change</a>
+                                <a href="#">DIR-3 KYC</a>
+                                <a href="#">EPF Return</a>
+                                <a href="#">Shareholding Transfer</a>
+                                <a href="#">DMAT Account-Company</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="#">Legal Drafting</a>
                     <a href="#">Become A Partner</a>
                 </nav>
