@@ -159,6 +159,9 @@ body {
 
 
 
+
+
+
 /* Floating Label */
 .form-group {
   position: relative;
@@ -2419,7 +2422,7 @@ ul.bannerserlist {
 }
 
 .highlight {
-  color: #f59e0b;
+  color: white;
   font-weight: 700;
 }
 
@@ -3092,3 +3095,46 @@ ul.bannerserlist {
 
 
 /* header mega menu  */
+
+
+
+
+/* ---------- Hero Background Blur + Gradient ---------- */
+.header-section {
+  background: url("./assets/bg-glow.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* BACKGROUND SHAPE */
+.header-section::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle at top right,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.02));
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.5;
+}
+
+/* BLUR + GLASS EFFECT */
+.header-section::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -80px;
+  width: 480px;
+  height: 480px;
+  background: linear-gradient(135deg,
+      rgba(255, 215, 85, 0.12),
+      rgba(255, 255, 255, 0.03));
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+}

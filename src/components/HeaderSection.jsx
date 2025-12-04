@@ -93,14 +93,6 @@ function HeaderSection() {
                 <p><i className="fas fa-thumbs-up"></i> Over 15K Businesses</p>
               </div>
             </div>
-            {/* <ul className="list-unstyled mt-3 ">
-              <li><i className="fas fa-gavel"></i> Expert Legal Guidance</li>
-              <li><i className="fas fa-bolt"></i> Fast & Affordable Service</li>
-            </ul> */}
-
-            {/* Brands + Button Row */}
-
-            {/* Popup Form Button */}
             <a
               className="btn btn-warning  fw-bold  mt-4 px-4 py-2"
               data-bs-toggle="modal"
@@ -120,7 +112,6 @@ function HeaderSection() {
             </a>
           </div>
 
-          {/* ✅ RIGHT COLUMN — Sun Image Slider */}
           <div className="col-md-6" data-aos="fade-left">
             <div className="header-slider rounded-4 overflow-hidden shadow-lg mt-4 mt-md-0">
               <Swiper

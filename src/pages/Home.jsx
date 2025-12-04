@@ -12,9 +12,9 @@ import ServiceSlider from "../components/ServiceSlider ";
 function Home() {
     return (
         <>
-          
-            <HeaderSection />
-            <BlogSection />
+
+            {/* <HeaderSection /> */}
+            {/* <BlogSection /> */}
             <StorySection />
             <ServiceSlider />
             <WhyVakilkaro />
@@ -22,9 +22,9 @@ function Home() {
             <ClientsSection />
             <Testimonials />
             <PopularSearches />
-            <BlogSection />
+            {/* <BlogSection /> */}
             <TawkTo />
-            
+
 
         </>
     );
