@@ -151,9 +151,9 @@ function Header() {
                         </div>
                     </div>
                 </div>
-          
-                    <br />
-                     
+
+                <br />
+
                 <div style={{ textAlign: "center" }}>
                     <h2
                         className="fw-bold mb-3"

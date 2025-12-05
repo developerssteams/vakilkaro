@@ -3110,7 +3110,7 @@ ul.bannerserlist {
 /* BACKGROUND SHAPE */
 .header-section::before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   top: -150px;
   right: -150px;
   width: 550px;
