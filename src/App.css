@@ -3041,7 +3041,7 @@ ul.bannerserlist {
 
 .service-card p {
   font-size: 15px;
-  color: #666;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -3203,4 +3203,81 @@ ul.bannerserlist {
   position: relative;
   z-index: 5;
   /* Left section above slider */
+}
+
+
+
+.buttonheader {
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+/* Card styling */
+.service-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px 20px;
+    transition: 0.3s ease;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title */
+.service-card h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: black;
+}
+
+/* Icon + price container */
+.icon-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* PURE screenshot style icon size (same size for all) */
+.service-icon,
+.service-icon-inline {
+    font-size: 45px !important;  /* BIG clean icon look */
+    width: 45px;
+    height: 45px;
+    color: #000;
+}
+
+/* PRICE TEXT */
+.price-inline {
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.price-inline span {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 2px;
+}
+
+/* Button style (same as screenshot) */
+.buttonheader {
+    background: #000;
+    color: white;
+    padding: 12px 20;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.buttonheader:hover {
+    opacity: 0.8;
 }

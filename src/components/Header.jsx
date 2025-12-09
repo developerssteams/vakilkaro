@@ -12,6 +12,15 @@ import "swiper/css/effect-fade";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faBuilding,
+    faAddressCard,
+    faTrademark,
+    faPhone,
+    faHandshake
+} from "@fortawesome/free-solid-svg-icons";
+
 
 
 function Header() {
@@ -159,7 +168,8 @@ function Header() {
 
                 <br />
 
-                <div style={{ textAlign: "center" }}>
+
+                <div  style={{ textAlign: "center" }}>
                     <h2
                         className="fw-bold mb-3"
                         style={{
@@ -187,9 +197,15 @@ function Header() {
                         {/* Company Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in">
                             <div className="service-card p-4 rounded-3 shadow-sm">
-                                <div className="icon mb-3"><i className="fas fa-building fa-2x"></i></div>
-                                <h5 className="fw-bold">Company Registration</h5>
-                                <p className="price">₹ 7,999<br /><span>7 days</span></p>
+
+
+                                <h5 className="fw-bold mt-3">Company Registration</h5>
+                                <div className="icon-price">
+                                    <FontAwesomeIcon icon={faBuilding} className="service-icon-inline" />
+                                    <p className="price-inline">₹ 7,999<br /><span>7 days</span></p>
+                                </div>
+
+
                                 <button className="buttonheader w-100 fw-bold">GET STARTED</button>
                             </div>
                         </div>
@@ -197,9 +213,14 @@ function Header() {
                         {/* GST Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
                             <div className="service-card p-4 rounded-3 shadow-sm">
-                                <div className="icon mb-3"><i className="fas fa-file-invoice fa-2x"></i></div>
-                                <h5 className="fw-bold">GST Registration</h5>
-                                <p className="price">₹ 5,099<br /><span>6 days</span></p>
+                                <h5 className="fw-bold mt-3">GST Registration</h5>
+                                <div className="icon-price">
+                                    <FontAwesomeIcon icon={faAddressCard} className="service-icon" />
+                                    <p className="price-inline">₹ 5,099<br /><span>6 days</span></p>
+                                </div>
+
+
+
                                 <button className="buttonheader w-100 fw-bold">GET STARTED</button>
                             </div>
                         </div>
@@ -207,9 +228,16 @@ function Header() {
                         {/* Trademark Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
                             <div className="service-card p-4 rounded-3 shadow-sm">
-                                <div className="icon mb-3"><i className="fas fa-registered fa-2x"></i></div>
-                                <h5 className="fw-bold">Trademark Registration</h5>
-                                <p className="price">₹ 9,499<br /><span>4 days</span></p>
+
+
+
+                                <h5 className="fw-bold mt-3">Trademark Registration</h5>
+                                <div className="icon-price">
+                                    <FontAwesomeIcon icon={faTrademark} className="service-icon" />
+                                    <p className="price-inline">₹ 9,499<br /><span>4 days</span></p>
+                                </div>
+
+
                                 <button className="buttonheader w-100 fw-bold">GET STARTED</button>
                             </div>
                         </div>
@@ -217,15 +245,23 @@ function Header() {
                         {/* FSSAI Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="600">
                             <div className="service-card p-4 rounded-3 shadow-sm">
-                                <div className="icon mb-3"><i className="fas fa-utensils fa-2x"></i></div>
-                                <h5 className="fw-bold">FSSAI Registration</h5>
-                                <p className="price">₹ 7,499<br /><span>7 days</span></p>
+
+
+
+                                <h5 className="fw-bold mt-3">FSSAI Registration</h5>
+                                <div className="icon-price">
+                                    <FontAwesomeIcon icon={faBuilding} className="service-icon" />
+                                    <p className="price-inline">₹ 7,499<br /><span>7 days</span></p>
+                                </div>
+
+
                                 <button className="buttonheader w-100 fw-bold">GET STARTED</button>
                             </div>
                         </div>
 
                     </div>
                 </div>
+
 
 
                 {/* ✅ Bootstrap Modal (Popup Form) */}
