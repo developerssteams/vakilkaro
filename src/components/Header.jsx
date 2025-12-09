@@ -113,18 +113,23 @@ function Header() {
                                 Legal Services in few clicks.
                             </p>
                             <a
-                                className="btn btn-warning  fw-bold  mt-4 px-4 py-2"
+                                className="buttonheader"
                                 data-bs-toggle="modal"
                                 data-bs-target="#enquiryModal">
                                 <i className="fas fa-user-plus"></i> VIEW SERVICES
                             </a>
+
+
                             &nbsp; &nbsp;
                             <a
-                                className="btn btn-warning  fw-bold  mt-4 px-4 py-2"
+                                className="buttonheader"
                                 data-bs-toggle="modal"
                                 data-bs-target="#enquiryModal">
                                 <i className="fas fa-user-plus"></i> HIRE  EXPERTS
                             </a>
+
+
+
                         </div>
                         <div className="col-md-6" data-aos="fade-left">
                             <div className="header-slider rounded-4 overflow-hidden shadow-lg mt-4 mt-md-0">
@@ -185,7 +190,7 @@ function Header() {
                                 <div className="icon mb-3"><i className="fas fa-building fa-2x"></i></div>
                                 <h5 className="fw-bold">Company Registration</h5>
                                 <p className="price">₹ 7,999<br /><span>7 days</span></p>
-                                <button className="btn btn-warning w-100 fw-bold">GET STARTED</button>
+                                <button className="buttonheader w-100 fw-bold">GET STARTED</button>
                             </div>
                         </div>
 
@@ -195,7 +200,7 @@ function Header() {
                                 <div className="icon mb-3"><i className="fas fa-file-invoice fa-2x"></i></div>
                                 <h5 className="fw-bold">GST Registration</h5>
                                 <p className="price">₹ 5,099<br /><span>6 days</span></p>
-                                <button className="btn btn-warning w-100 fw-bold">GET STARTED</button>
+                                <button className="buttonheader w-100 fw-bold">GET STARTED</button>
                             </div>
                         </div>
 
@@ -205,7 +210,7 @@ function Header() {
                                 <div className="icon mb-3"><i className="fas fa-registered fa-2x"></i></div>
                                 <h5 className="fw-bold">Trademark Registration</h5>
                                 <p className="price">₹ 9,499<br /><span>4 days</span></p>
-                                <button className="btn btn-warning w-100 fw-bold">GET STARTED</button>
+                                <button className="buttonheader w-100 fw-bold">GET STARTED</button>
                             </div>
                         </div>
 
@@ -215,7 +220,7 @@ function Header() {
                                 <div className="icon mb-3"><i className="fas fa-utensils fa-2x"></i></div>
                                 <h5 className="fw-bold">FSSAI Registration</h5>
                                 <p className="price">₹ 7,499<br /><span>7 days</span></p>
-                                <button className="btn btn-warning w-100 fw-bold">GET STARTED</button>
+                                <button className="buttonheader w-100 fw-bold">GET STARTED</button>
                             </div>
                         </div>
 

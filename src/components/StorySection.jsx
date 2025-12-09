@@ -22,7 +22,7 @@ const StorySection = () => {
                         institutional investors to further our mission.
                     </p>
 
-                    <button className="story-btn">
+                    <button className="buttonheader">
                         Know more →
                     </button>
                 </div>
