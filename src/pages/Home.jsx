@@ -16,7 +16,7 @@ function Home() {
             {/* <HeaderSection /> */}
             {/* <BlogSection /> */}
             <StorySection />
-            <ServiceSlider />
+            {/* <ServiceSlider /> */}
             <WhyVakilkaro />
             <Timeline />
             <ClientsSection />

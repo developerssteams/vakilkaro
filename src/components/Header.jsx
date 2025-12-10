@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import logo from "../assets/vakilkaro.png";
 import { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
@@ -169,7 +168,7 @@ function Header() {
                 <br />
 
 
-                <div  style={{ textAlign: "center" }}>
+                <div style={{ textAlign: "center" }}>
                     <h2
                         className="fw-bold mb-3"
                         style={{
@@ -178,6 +177,8 @@ function Header() {
                             fontWeight: 700
                         }}
                     >
+                        <br />
+                        <br />
                         <br />
                         <span
                             className="highlight"
@@ -190,6 +191,107 @@ function Header() {
                         </span>
                     </h2>
                 </div>
+                <div className="service-head" style={{ color: 'white' }} >
+                    <h3 style={{ color: 'white' }} >Smart Solutions for Modern Businesses</h3>
+                    All-in-one platform for online legal consultation, business incorporation, corporate compliance, and startup-friendly solutions—tailored for every industry.
+                </div>
+
+                <div className="container mt-4">
+                    <div className="row justify-content-center text-center">
+
+                        {/* Company Registration */}
+                        <div className="col-md-3 mb-4" data-aos="zoom-in">
+                            <div className="service-card p-4 rounded-3 shadow-sm">
+
+
+                                <h5 className="fw-bold mt-3">Company Registration</h5>
+                                <div className="icon-price">
+                                    <FontAwesomeIcon icon={faBuilding} className="service-icon-inline" />
+                                    <p className="price-inline">₹ 7,999<br /><span>7 days</span></p>
+                                </div>
+
+
+                                <button className="buttonheader w-100 fw-bold">GET STARTED</button>
+                            </div>
+                        </div>
+
+                        {/* GST Registration */}
+                        <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <div className="service-card p-4 rounded-3 shadow-sm">
+                                <h5 className="fw-bold mt-3">GST Registration</h5>
+                                <div className="icon-price">
+                                    <FontAwesomeIcon icon={faAddressCard} className="service-icon" />
+                                    <p className="price-inline">₹ 5,099<br /><span>6 days</span></p>
+                                </div>
+
+
+
+                                <button className="buttonheader w-100 fw-bold">GET STARTED</button>
+                            </div>
+                        </div>
+
+                        {/* Trademark Registration */}
+                        <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                            <div className="service-card p-4 rounded-3 shadow-sm">
+
+
+
+                                <h5 className="fw-bold mt-3">Trademark Registration</h5>
+                                <div className="icon-price">
+                                    <FontAwesomeIcon icon={faTrademark} className="service-icon" />
+                                    <p className="price-inline">₹ 9,499<br /><span>4 days</span></p>
+                                </div>
+
+
+                                <button className="buttonheader w-100 fw-bold">GET STARTED</button>
+                            </div>
+                        </div>
+
+                        {/* FSSAI Registration */}
+                        <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                            <div className="service-card p-4 rounded-3 shadow-sm">
+
+
+
+                                <h5 className="fw-bold mt-3">FSSAI Registration</h5>
+                                <div className="icon-price">
+                                    <FontAwesomeIcon icon={faBuilding} className="service-icon" />
+                                    <p className="price-inline">₹ 7,499<br /><span>7 days</span></p>
+                                </div>
+
+
+                                <button className="buttonheader w-100 fw-bold">GET STARTED</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div style={{ textAlign: "center" }}>
+                    <h2
+                        className="fw-bold mb-3"
+                        style={{
+                            marginTop: 0,
+                            marginBottom: "10px",
+                            fontWeight: 700
+                        }}
+                    >
+                        <br />
+                        <br />
+                        <br />
+                        <span
+                            className="highlight"
+                            style={{
+                                color: "white",     // highlight aqua color
+                                display: "inline-block"
+                            }}
+                        >
+                            Our Market Place
+                        </span>
+                    </h2>
+                </div>
+               
 
                 <div className="container mt-4">
                     <div className="row justify-content-center text-center">

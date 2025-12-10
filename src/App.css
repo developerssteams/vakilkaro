@@ -273,7 +273,7 @@ body {
 /* ===== Responsive ===== */
 @media (max-width: 992px) {
   .header-container {
-    flex-direction: column;
+    flex-direction: column
   }
 
   .header-left h1 {
@@ -290,6 +290,7 @@ body {
     align-self: flex-start;
   }
 }
+
 
 /* ===== Home Service Section ===== */
 
@@ -529,144 +530,162 @@ ul.bannerserlist {
   }
 }
 
+
+
+
 /* ===== Why Section ===== */
+/* MAIN SECTION */
 .why-section {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   gap: 40px;
-  padding: 50px 20px;
-  flex-wrap: wrap;
+  padding: 60px 0;
+  align-items: flex-start;
 }
 
+/* LEFT SIDE */
 .why-left {
   flex: 1;
-  min-width: 280px;
 }
 
 .why-heading {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
-  margin-bottom: 15px;
   color: #111;
+  margin-bottom: 15px;
 }
 
 .why-subheading {
   font-size: 16px;
-  color: #444;
-  margin-bottom: 25px;
+  color: #555;
+  margin-bottom: 30px;
   line-height: 1.6;
 }
 
-/* Contact Box */
+/* CONTACT BOX */
 .why-contact-box {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
   background: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+  text-align: center;
 }
 
 .why-contact-box h4 {
-  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
+  color: #222;
 }
 
 .why-contact-box p {
-  margin-bottom: 15px;
   font-size: 14px;
-  color: #555;
+  color: #666;
+  margin: 10px 0 20px;
 }
 
+/* CALL / WHATSAPP BUTTONS */
 .why-btns {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .call-btn {
   background: #2563eb;
-  color: #fff;
+  /* Blue */
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
   border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: 500;
-  transition: background 0.3s;
-}
-
-.call-btn:hover {
-  background: #1e4db7;
 }
 
 .whatsapp-btn {
-  background: #22c55e;
-  color: #fff;
+  background: #25D366;
+  /* WhatsApp green */
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
   border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: 500;
-  transition: background 0.3s;
 }
 
-.whatsapp-btn:hover {
-  background: #16a34a;
-}
-
-/* Right Side Cards */
+/* RIGHT SIDE GRID STYLE */
 .why-right {
-  flex: 2;
+  flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
+/* CARD STYLE */
 .why-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
   background: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
 }
 
 .why-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
 }
 
+/* ICON (GOLD COLOR THEME) */
 .why-icon {
-  font-size: 30px;
-  color: #f59e0b;
+  font-size: 32px;
+  color: #E4B34C;
+  /* GOLD */
   margin-bottom: 10px;
 }
 
+/* CARD TITLE */
 .why-card h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #111;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
 }
 
+/* CARD DESCRIPTION */
 .why-card p {
   font-size: 14px;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* RESPONSIVE */
+@media (max-width: 900px) {
   .why-section {
     flex-direction: column;
   }
 
-  .why-left {
-    text-align: center;
+  .why-right {
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .why-right {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* why end  MAIN SECTION *
+
 
 /* ===== Navbar ===== */
 .navbar {
@@ -2912,7 +2931,7 @@ ul.bannerserlist {
 .story-wrapper {
   width: 100%;
   padding: 80px 0;
-  background: radial-gradient(circle at top, #101010, #000); 
+  background: radial-gradient(circle at top, #101010, #000);
   display: flex;
   justify-content: center;
 }
@@ -2994,7 +3013,9 @@ ul.bannerserlist {
     flex-direction: column;
     text-align: center;
   }
-  .story-left, .story-right {
+
+  .story-left,
+  .story-right {
     width: 100%;
   }
 }
@@ -3208,76 +3229,78 @@ ul.bannerserlist {
 
 
 .buttonheader {
-    background: #000;
-    color: #fff;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
 }
+
 /* Card styling */
 .service-card {
-    background: #ffffff;
-    border-radius: 15px;
-    padding: 25px 20px;
-    transition: 0.3s ease;
-    min-height: 260px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  transition: 0.3s ease;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Title */
 .service-card h5 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: black;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: black;
 }
 
 /* Icon + price container */
 .icon-price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 /* PURE screenshot style icon size (same size for all) */
 .service-icon,
 .service-icon-inline {
-    font-size: 45px !important;  /* BIG clean icon look */
-    width: 45px;
-    height: 45px;
-    color: #000;
+  font-size: 45px !important;
+  /* BIG clean icon look */
+  width: 45px;
+  height: 45px;
+  color: #000;
 }
 
 /* PRICE TEXT */
 .price-inline {
-    margin: 0;
-    text-align: left;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 20px;
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .price-inline span {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-top: 2px;
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 2px;
 }
 
 /* Button style (same as screenshot) */
 .buttonheader {
-    background: #000;
-    color: white;
-    padding: 12px 20;
-    border-radius: 8px;
-    border: none;
-    transition: 0.3s ease;
+  background: #000;
+  color: white;
+  padding: 12px 20;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s ease;
 }
 
 .buttonheader:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
