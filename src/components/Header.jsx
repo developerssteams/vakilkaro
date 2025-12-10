@@ -192,8 +192,8 @@ function Header() {
                     </h2>
                 </div>
                 <div className="service-head" style={{ color: 'white' }} >
-                    <h3 style={{ color: 'white' }} >Smart Solutions for Modern Businesses</h3>
-                    All-in-one platform for online legal consultation, business incorporation, corporate compliance, and startup-friendly solutions—tailored for every industry.
+                    <h4 style={{ color: 'white' }} >Smart Solutions for Modern Businesses</h4>
+                   <h5> All-in-one platform for online legal consultation, business incorporation, corporate compliance, and startup-friendly solutions—tailored for every industry.</h5>
                 </div>
 
                 <div className="container mt-4">
@@ -201,12 +201,12 @@ function Header() {
 
                         {/* Company Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in">
-                            <div className="service-card p-4 rounded-3 shadow-sm">
+                            <div className="why-card">
 
 
-                                <h5 className="fw-bold mt-3">Company Registration</h5>
+                                <h4 >Company Registration</h4>
                                 <div className="icon-price">
-                                    <FontAwesomeIcon icon={faBuilding} className="service-icon-inline" />
+                                    <FontAwesomeIcon icon={faBuilding} className="service-icon-inline" style={{ color: "#fff", fontSize: "28px" }} />
                                     <p className="price-inline">₹ 7,999<br /><span>7 days</span></p>
                                 </div>
 
@@ -217,10 +217,10 @@ function Header() {
 
                         {/* GST Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                            <div className="service-card p-4 rounded-3 shadow-sm">
-                                <h5 className="fw-bold mt-3">GST Registration</h5>
+                            <div className="why-card">
+                                <h4>GST Registration</h4>
                                 <div className="icon-price">
-                                    <FontAwesomeIcon icon={faAddressCard} className="service-icon" />
+                                    <FontAwesomeIcon icon={faAddressCard} className="service-icon" style={{ color: "#fff", fontSize: "28px" }} />
                                     <p className="price-inline">₹ 5,099<br /><span>6 days</span></p>
                                 </div>
 
@@ -232,13 +232,13 @@ function Header() {
 
                         {/* Trademark Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
-                            <div className="service-card p-4 rounded-3 shadow-sm">
+                            <div className="why-card">
 
 
 
-                                <h5 className="fw-bold mt-3">Trademark Registration</h5>
+                                <h4>Trademark Registration</h4>
                                 <div className="icon-price">
-                                    <FontAwesomeIcon icon={faTrademark} className="service-icon" />
+                                    <FontAwesomeIcon icon={faTrademark} className="service-icon" style={{ color: "#fff", fontSize: "28px" }} />
                                     <p className="price-inline">₹ 9,499<br /><span>4 days</span></p>
                                 </div>
 
@@ -249,13 +249,13 @@ function Header() {
 
                         {/* FSSAI Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="600">
-                            <div className="service-card p-4 rounded-3 shadow-sm">
+                            <div className="why-card">
 
 
 
-                                <h5 className="fw-bold mt-3">FSSAI Registration</h5>
+                                <h4>FSSAI Registration</h4>
                                 <div className="icon-price">
-                                    <FontAwesomeIcon icon={faBuilding} className="service-icon" />
+                                    <FontAwesomeIcon icon={faBuilding} className="service-icon" style={{ color: "#fff", fontSize: "28px" }} />
                                     <p className="price-inline">₹ 7,499<br /><span>7 days</span></p>
                                 </div>
 
@@ -298,12 +298,12 @@ function Header() {
 
                         {/* Company Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in">
-                            <div className="service-card p-4 rounded-3 shadow-sm">
+                            <div className="why-card">
 
 
-                                <h5 className="fw-bold mt-3">Company Registration</h5>
+                                <h4>Company Registration</h4>
                                 <div className="icon-price">
-                                    <FontAwesomeIcon icon={faBuilding} className="service-icon-inline" />
+                                    <FontAwesomeIcon icon={faBuilding} className="service-icon-inline" style={{ color: "#fff", fontSize: "28px" }} />
                                     <p className="price-inline">₹ 7,999<br /><span>7 days</span></p>
                                 </div>
 
@@ -314,10 +314,10 @@ function Header() {
 
                         {/* GST Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                            <div className="service-card p-4 rounded-3 shadow-sm">
-                                <h5 className="fw-bold mt-3">GST Registration</h5>
+                            <div className="why-card">
+                                <h4>GST Registration</h4>
                                 <div className="icon-price">
-                                    <FontAwesomeIcon icon={faAddressCard} className="service-icon" />
+                                    <FontAwesomeIcon icon={faAddressCard} className="service-icon" style={{ color: "#fff", fontSize: "28px" }} />
                                     <p className="price-inline">₹ 5,099<br /><span>6 days</span></p>
                                 </div>
 
@@ -329,13 +329,13 @@ function Header() {
 
                         {/* Trademark Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
-                            <div className="service-card p-4 rounded-3 shadow-sm">
+                            <div className="why-card">
 
 
 
-                                <h5 className="fw-bold mt-3">Trademark Registration</h5>
+                                <h4>Trademark Registration</h4>
                                 <div className="icon-price">
-                                    <FontAwesomeIcon icon={faTrademark} className="service-icon" />
+                                    <FontAwesomeIcon icon={faTrademark} className="service-icon" style={{ color: "#fff", fontSize: "28px" }} />
                                     <p className="price-inline">₹ 9,499<br /><span>4 days</span></p>
                                 </div>
 
@@ -346,13 +346,13 @@ function Header() {
 
                         {/* FSSAI Registration */}
                         <div className="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="600">
-                            <div className="service-card p-4 rounded-3 shadow-sm">
+                            <div className="why-card">
 
 
 
-                                <h5 className="fw-bold mt-3">FSSAI Registration</h5>
+                                <h4>FSSAI Registration</h4>
                                 <div className="icon-price">
-                                    <FontAwesomeIcon icon={faBuilding} className="service-icon" />
+                                    <FontAwesomeIcon icon={faBuilding} className="service-icon" style={{ color: "#fff", fontSize: "28px" }} />
                                     <p className="price-inline">₹ 7,499<br /><span>7 days</span></p>
                                 </div>
 

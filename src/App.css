@@ -3192,7 +3192,7 @@ ul.bannerserlist {
   font-size: 14px;
   color: #555;
 }
-
+/* 
 .buttonheader {
   background-color: #000;
   color: #fff;
@@ -3205,7 +3205,9 @@ ul.bannerserlist {
   cursor: pointer;
   position: relative;
   z-index: 10;
-}
+  
+  
+} */
 
 .buttonheader:hover {
   background-color: #E4B34C;
@@ -3299,6 +3301,15 @@ ul.bannerserlist {
   border-radius: 8px;
   border: none;
   transition: 0.3s ease;
+      border: 2px solid #E4B34C;
+
+  font-weight: 600;
+  display: inline-block;
+ 
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 
 .buttonheader:hover {
