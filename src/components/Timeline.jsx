@@ -1,5 +1,5 @@
 
-import TimelineImg from "../assets/Images/timeline1.png";
+import TimelineImg from "../assets/Images/timeline.jpg";
 function Timeline() {
 
   return (

@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "../App.css";
+import "../WhyVakilkaro.css";
 
 
 // ✅ Import images from assets
@@ -57,9 +58,10 @@ function Testimonials() {
   ];
 
   return (
-    <section className="testimonials-section container my-5">
+    <section className="why-card">
       <h2 className="testimonials-heading">What Our Clients Say</h2>
-
+      <br />
+      <div className="container" >
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={20}
@@ -75,7 +77,7 @@ function Testimonials() {
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="testimonial-card">
+            <div className="why-card">
               <img src={item.image} alt={item.name} className="testimonial-img" />
               <h4 className="testimonial-name">{item.name}</h4>
               <p className="testimonial-role">
@@ -86,6 +88,7 @@ function Testimonials() {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
     </section>
   );
 }

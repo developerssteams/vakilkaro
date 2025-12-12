@@ -54,6 +54,11 @@ function Header() {
         setTimer(30);
         setOtp("");
     };
+    const [menuOpen, setMenuOpen] = useState(false); // NEW CODE: Menu state
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen); // NEW CODE: Toggle menu
+    };
     return (
         <>
             <header className="rk-header">
@@ -64,47 +69,38 @@ function Header() {
                         <img src={logo} alt="logo" className="rk-logo" />
                     </div>
 
-                    {/* Navigation */}
-                    <nav className="rk-nav">
+                    {/* NEW CODE: Toggle button */}
+                    <i className="ri-menu-line rk-toggle" onClick={toggleMenu}></i>
 
-                        {/* 🔥 Registrations Menu + Mega Dropdown */}
+                    {/* Navigation */}
+                    <nav className={`rk-nav ${menuOpen ? "show" : ""}`}> {/* NEW CODE: add show */}
                         <div className="rk-menu-item">
                             <a href="#">Verified Services</a>
-                            {/* Mega Dropdown */}
-
                         </div>
 
-                        {/* Other Menus */}
                         <div className="rk-menu-item">
-                            <a href="#">Marketpiace </a>
-
+                            <a href="#">Marketplace</a>
                         </div>
+
                         <div className="rk-menu-item">
                             <a href="#">Become Partner</a>
-
                         </div>
 
                         <div className="rk-menu-item">
                             <a href="#">Learning</a>
-
-                        </div>
-
-                        <div className="rk-menu-item">
-                            <a href="#">Blogs</a>
-
                         </div>
 
                         <div className="rk-menu-item">
                             <a href="#">Contact</a>
                         </div>
-
                     </nav>
 
                     {/* Right Side */}
                     <div className="rk-right">
-                        <i className="ri-search-line rk-search"></i>
+                        {/* <i className="ri-search-line rk-search"></i> */}
                         <button className="rk-login-btn">Login</button>
                     </div>
+
                 </div>
             </header>
             <section className="header-section py-5">
@@ -193,7 +189,7 @@ function Header() {
                 </div>
                 <div className="service-head" style={{ color: 'white' }} >
                     <h4 style={{ color: 'white' }} >Smart Solutions for Modern Businesses</h4>
-                   <h5> All-in-one platform for online legal consultation, business incorporation, corporate compliance, and startup-friendly solutions—tailored for every industry.</h5>
+                    <h5> All-in-one platform for online legal consultation, business incorporation, corporate compliance, and startup-friendly solutions—tailored for every industry.</h5>
                 </div>
 
                 <div className="container mt-4">
@@ -291,7 +287,7 @@ function Header() {
                         </span>
                     </h2>
                 </div>
-               
+
 
                 <div className="container mt-4">
                     <div className="row justify-content-center text-center">
