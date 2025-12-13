@@ -65,7 +65,7 @@ function Testimonials() {
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={1}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         navigation={false} // ✅ arrows disabled
